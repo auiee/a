@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Login</title>
-  <meta charset="UTF-8"></meta>
+  <head>
+    <title>Minecraft 1.5.2</title>
     <link rel="icon" href="favicon.png"/>
     <link rel="shortcut icon" href="favicon.png"/>
     <script type="text/javascript" src="classes.js"></script>
@@ -142,39 +141,6 @@
         });
       }
     </script>
-</head>
-<body>
-  <div id="loginForm">
-    <h2>Login</h2>
-    <form onsubmit="return false;">
-      <label for="username">Username:</label><br>
-      <input type="text" id="username" name="username"><br>
-      <label for="password">Password:</label><br>
-      <input type="password" id="password" name="password"><br><br>
-      <button onclick="checkLogin()">Login</button>
-    </form>
-  </div>
-       
-  <div id="loggedInContent" style="display:none;">
-
+  </head>
   <body style="margin: 0px; width: 100vw; height: 100vh;" id="game_frame"></body>
-  </div>
-
-  <script>
-    function checkLogin() {
-      var username = document.getElementById("username").value;
-      var password = document.getElementById("password").value;
-
-      // ここで特定のユーザー名とパスワードをチェックします
-      if (username === "eagle" && password === "mine") {
-        // ログイン成功
-        document.getElementById("loginForm").style.display = "none";
-        document.getElementById("loggedInContent").style.display = "block";
-      } else {
-        // ログイン失敗
-        alert("パスワードまたはユーザー名が違います。やり直してください。");
-      }
-    }
-  </script>
-</body>
 </html>
