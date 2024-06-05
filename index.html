@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Authentication</title>
+<script>
+function authenticate() {
+    var password = document.getElementById("password").value;
+    if (password === "eagle") {
+        window.location.href = "/eagle/"; // リダイレクト先のURLを指定します。
+    } else {
+        alert("パスワードが間違っています。");
+    }
+}
+</script>
+</head>
+<body>
+    <h2>パスワード認証</h2>
+    <form>
+        <label>ユーザー名:</label><br>
+        <label for="password">パスワード:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="button" value="ログイン" onclick="authenticate()">
+    </form>
+</body>
+</html>
